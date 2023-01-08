@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="13" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-01T20:14:31 IST" name="Suite" finished-at="2022-10-01T20:17:25 IST" duration-ms="174073">
+    <groups>
+    </groups>
+    <test started-at="2022-10-01T20:14:31 IST" name="Test" finished-at="2022-10-01T20:17:25 IST" duration-ms="174073">
+      <class name="com.amazon.testcases.forgotPassword">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.amazon.testcases.forgotPassword@2e6a8155]" started-at="2022-10-01T20:16:31 IST" name="startTest" finished-at="2022-10-01T20:16:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amazon.testcases.forgotPassword.forgetPasswordTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="forgetPasswordTest()[pri:1, instance:com.amazon.testcases.forgotPassword@2e6a8155]" started-at="2022-10-01T20:16:31 IST" name="forgetPasswordTest" finished-at="2022-10-01T20:16:40 IST" duration-ms="9222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgetPasswordTest -->
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.forgotPassword@2e6a8155]" started-at="2022-10-01T20:16:40 IST" name="status" finished-at="2022-10-01T20:16:40 IST" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=forgetPasswordTest status=SUCCESS method=forgotPassword.forgetPasswordTest()[pri:1, instance:com.amazon.testcases.forgotPassword@2e6a8155] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+      </class> <!-- com.amazon.testcases.forgotPassword -->
+      <class name="com.amazon.testcases.createAccount">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.amazon.testcases.createAccount@6221a451]" started-at="2022-10-01T20:16:40 IST" name="startTest" finished-at="2022-10-01T20:16:40 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amazon.testcases.createAccount.createAccountTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="createAccountTest()[pri:0, instance:com.amazon.testcases.createAccount@6221a451]" started-at="2022-10-01T20:16:40 IST" name="createAccountTest" finished-at="2022-10-01T20:17:24 IST" duration-ms="43909" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.id: nav-link-accountList
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IN-PG02H7VY', ip: '192.168.10.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: nav-link-accountList
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IN-PG02H7VY', ip: '192.168.10.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at com.amazon.testcases.createAccount.createAccountTest(createAccount.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTest -->
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.createAccount@6221a451]" started-at="2022-10-01T20:17:24 IST" name="status" finished-at="2022-10-01T20:17:25 IST" duration-ms="547" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAccountTest status=FAILURE method=createAccount.createAccountTest()[pri:0, instance:com.amazon.testcases.createAccount@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IN-PG02H7VY', ip: '192.168.10.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ca47b99f345ca9228373fc1b9764fb1, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\MAYURJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56316/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ca47b99f345ca9228373fc1b9764fb1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.91)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'IN-PG02H7VY', ip: '192.168.10.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ca47b99f345ca9228373fc1b9764fb1, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.91, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\MAYURJ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56316/devtoo..., se:cdpVersion: 106.0.5249.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ca47b99f345ca9228373fc1b9764fb1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+at com.amazon.utilities.ScreenShot.takeScreenShot(ScreenShot.java:16)
+at com.amazon.pages.basePage.status(basePage.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:772)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:748)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+      </class> <!-- com.amazon.testcases.createAccount -->
+      <class name="com.amazon.testcases.loginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:14:12 IST" name="setup" finished-at="2022-10-01T20:14:31 IST" duration-ms="18414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:14:31 IST" name="navigateToUrl" finished-at="2022-10-01T20:14:41 IST" duration-ms="10409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:14:41 IST" name="startTest" finished-at="2022-10-01T20:14:42 IST" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amazon.testcases.loginTest.login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="login()[pri:1, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:14:42 IST" name="login" finished-at="2022-10-01T20:15:31 IST" duration-ms="49712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:31 IST" name="status" finished-at="2022-10-01T20:15:34 IST" duration-ms="2639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=loginTest.login()[pri:1, instance:com.amazon.testcases.loginTest@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:34 IST" name="startTest" finished-at="2022-10-01T20:15:34 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amazon.testcases.loginTest.addressVerifyTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="addressVerifyTest()[pri:2, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:34 IST" name="addressVerifyTest" finished-at="2022-10-01T20:15:34 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressVerifyTest -->
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:34 IST" name="status" finished-at="2022-10-01T20:15:35 IST" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addressVerifyTest status=SUCCESS method=loginTest.addressVerifyTest()[pri:2, instance:com.amazon.testcases.loginTest@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:35 IST" name="startTest" finished-at="2022-10-01T20:15:35 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amazon.testcases.loginTest.searchProductTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="searchProductTest()[pri:3, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:35 IST" name="searchProductTest" finished-at="2022-10-01T20:15:46 IST" duration-ms="11476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductTest -->
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:46 IST" name="status" finished-at="2022-10-01T20:15:46 IST" duration-ms="288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProductTest status=SUCCESS method=loginTest.searchProductTest()[pri:3, instance:com.amazon.testcases.loginTest@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:46 IST" name="startTest" finished-at="2022-10-01T20:15:46 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amazon.testcases.loginTest.addToCartTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="addToCartTest()[pri:4, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:15:46 IST" name="addToCartTest" finished-at="2022-10-01T20:16:22 IST" duration-ms="35904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:16:22 IST" name="status" finished-at="2022-10-01T20:16:23 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartTest status=SUCCESS method=loginTest.addToCartTest()[pri:4, instance:com.amazon.testcases.loginTest@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:16:23 IST" name="startTest" finished-at="2022-10-01T20:16:23 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.amazon.testcases.loginTest.signOutTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="signOutTest()[pri:5, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:16:23 IST" name="signOutTest" finished-at="2022-10-01T20:16:30 IST" duration-ms="7799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOutTest -->
+        <test-method is-config="true" signature="status(org.testng.ITestResult)[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:16:30 IST" name="status" finished-at="2022-10-01T20:16:31 IST" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signOutTest status=SUCCESS method=loginTest.signOutTest()[pri:5, instance:com.amazon.testcases.loginTest@5e600dd5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.testcases.loginTest@5e600dd5]" started-at="2022-10-01T20:17:25 IST" name="tearDown" finished-at="2022-10-01T20:17:27 IST" duration-ms="1507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.testcases.loginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
