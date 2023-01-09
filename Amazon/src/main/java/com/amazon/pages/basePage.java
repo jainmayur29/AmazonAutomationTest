@@ -30,7 +30,7 @@ public class basePage {
 	@BeforeSuite
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\mayurjain\\\\Downloads\\\\chromedriver_win32\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\driver\\chromedriver.exe"));
 		// For Running Testcases in Headless Mode
 		//ChromeOptions options = new ChromeOptions();
 		//options.setHeadless(true);
