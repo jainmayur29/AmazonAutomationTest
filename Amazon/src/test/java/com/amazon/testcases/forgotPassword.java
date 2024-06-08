@@ -17,5 +17,10 @@ public class forgotPassword extends basePage {
 		driver.findElement(By.linkText("Forgot Password")).click();
 		driver.findElement(By.id("continue"));
 	}
+
+	@Test(priority=2)
+	public void logout(){
+		System.out.println("Successfull logout");
+	}
 	
 }
