@@ -21,6 +21,7 @@ public class forgotPassword extends basePage {
 	@Test(priority=2)
 	public void logout(){
 		System.out.println("Successfull logout");
+		System.out.println("Added the test cases successfully");
 	}
 	
 }
