@@ -24,5 +24,9 @@ public class forgotPassword extends basePage {
 		System.out.println("Added the test cases successfully");
 		System.out.println("Added the Forgot testcases successfully");
 	}
+	@Test(priority=3)
+	public void addetest(){
+		System.out.println("Added the addtest method");
+	}
 	
 }
